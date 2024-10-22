@@ -13,9 +13,9 @@ const user1 = mongoose.model("users");
 app.use(express.json());
 app.use(cors());
 
-const PORT = process.env.PORT || 3002;
-const MONGODB_URL = process.env.MONGO_URL;
-const JWT_SECRET = process.env.JWT_SECRET;
+const PORT = 3002;
+const MONGODB_URL = "mongodb+srv://kvarman48:sasikala128@cluster0.gsbvc.mongodb.net/CRUD?retryWrites=true&w=majority";
+const JWT_SECRET = '357615a3801943554f7dd0e4e41e159c9b849410eaa674e30364570c6f4efe81500f24f2e81ff1d465bba93bed21de9e6fa7ff0f56aa221144c33ea879bd7fbd';
 
 // Connect to MongoDB
 mongoose.connect(MONGODB_URL, {
